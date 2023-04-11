@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Quiz</h1>
+    </header>
+    <main>
+      <div id="start-container">
+        <h2>Test your knowledge of JavaScript fundamentals!</h2>
+        <button id="start-btn" class="btn">Start Quiz</button>
+      </div>
+      <div id="quiz-container" class="hide">
+        <div id="question-container"></div>
+        <div id="timer">Time: <span id="time-left"></span></div>
+      </div>
+      <div id="score-container" class="hide">
+        <h2>All done!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <form>
+          <label for="initials">Enter initials:</label>
+          <input
+            type="text"
+            id="initials"
+            name="initials"
+            maxlength="3"
+            required
+          />
+          <button id="submit-btn" class="btn">Submit</button>
+        </form>
+        <button id="reset-btn" class="btn">Go Back</button>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
